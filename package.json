@@ -2,7 +2,7 @@
   "scripts": {
     "build": "tsc",
     "start": "tsc && node dist/index.js",
-    "server": "tsc && node dist/index.js",
+    "server": "ts-node ./src/index.ts",
     "client": "npm start --prefix ./client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
